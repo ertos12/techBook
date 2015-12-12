@@ -47,3 +47,96 @@ git push -u origin master
 
 删除github下目录
 git rm -r --cached  directory
+
+
+问题原因：由于提交文件内容过大，导致git报错。
+解决方案：修改http请求最大容量   $ git config http.postBuffer 524288000
+
+git使用简单举例：
+
+1，创建项目  在github 用户名旁边有一个 create a new repo 的小图标,假设新建项目名为project。
+2,创建本地新项目 并提交
+$ mkdir  project//创建推送目录
+$ cd  project         //进入推送目录    
+$ git init       //设置该目录为推送
+$ touch README   //生成readme
+$ git add README //加入修改列表
+$ git commit -m "first commit' //递交修改声明
+$ git remote add origin git@github.com:username/project.git //为远程Git更名为origin, origin 在这里就是git@github.com:username/project.git的一个别名
+
+    // git remote add origin 若出现错误 fatal:remote origin already exists 则可以通过命令git remote rm origin删除 已存在的origin。
+$ git push -u origin master //推送此次修改 本地和远程合并，本地默认分支为master
+
+
+git操作常见错误
+1，git push代码时提示"Permission denied (publickey)"
+
+  提交项目到github 当输入 git push origin master 时出现如下错误：
+
+   Permission denied (publickey).
+
+   fatal: The remote end hung up unexpectedly
+
+  解决方法：  
+   这个错误说明 需要我们设置一个 ssh key
+
+  stackoverflow上找到了解决方法，点这里， 或者到官网 也有 Generating SSH Keys的教程，点这里。
+
+2, git push出现 Repository not found.
+
+   ERROR: Repository not found.
+   fatal: The remote end hung up unexpectedly 
+
+   个问题是因为在你推送的github账户中，并没有这个Repository。
+   解决方法：
+　检查自己的github中的Repository，检查自己创建的目录，必须要两者一致（如果没有项目 则需要创建项目  在用户名旁边有一个 create a new repo 的小图标）；
+
+     或者先git clone下github中的Repository，然后再进行更改，这样就一定一致了。
+
+3，好吧上面的问题解决了又出现问题
+
+    ! [rejected] master -> master (non-fast-forward)
+
+     error: failed to push some refs to ...
+
+     通过错误提示:your current branch is behind its remote counterpart. merge th remote changes(e.g. ‘git pull’).
+
+    可知原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。
+
+    解决方法：
+
+     有2个选择方式：
+  A，git pull
+       先把git的东西fetch到你本地然后merge后再push
+       git fetch
+       git merge
+       这2句命令等价于
+       git pull
+      但是在 使用命令 pull之前需要指定branch与merge可以通过修改 .git/config文件中的下列内容:
+     [branch "master"]
+           remote = origin
+           merge = refs/heads/master
+     也可以直接命令行修改
+     git config branch.master.remote origin
+     git config branch.master.merge ref/heads/master
+
+   B，强制推送(不建议使用，会覆盖remote的内容)
+
+       使用命令 git push -f 即可。
+
+4, push的时候出现如下错误:
+    fatal: remote error:  
+    You can't push to git://github.com/user_name/user_repo.git  
+    Use git@github.com:user_name/user_repo.git  
+   解决方法：
+   注意提示,You can't push to git://github.com/user_name/user_repo.git  
+   如果在git clone的时  用的是git://github.com:xx/xxx.git的形式, 那么就会出现这个问题，因为这个protocol(git://)是不支持push的.
+
+   所以clone使用这种形式 :git clone git@github.com:user_name/user_repo.git.（然后git remote rm origin,git remote add ....）
+
+
+
+1. Git error: The following untracked working tree files would be overwritten by checkout
+git clean  -d  -fx ""
+
+
