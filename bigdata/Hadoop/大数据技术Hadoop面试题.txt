@@ -1,0 +1,368 @@
+单项选择题
+
+1. 下面哪个程序负责 HDFS 数据存储。
+
+a)NameNode
+b)Jobtracker
+c)Datanode
+d)secondaryNameNode
+e)tasktracker
+
+2. HDfS 中的 block 默认保存几份？
+
+a)3 份
+b)2 份
+c)1 份
+d)不确定
+
+3. 下列哪个程序通常与 NameNode 在一个节点启动？
+
+a)SecondaryNameNode
+b)DataNode
+c)TaskTracker
+d)Jobtracker
+
+4. Hadoop 作者
+
+a)Martin Fowler
+b)Kent Beck
+c)Doug cutting
+
+5. HDFS 默认 Block Size
+
+a)32MB
+b)64MB
+c)128MB
+
+6. 下列哪项通常是集群的最主要瓶颈
+
+a)CPU
+b)网络
+c)磁盘
+d)内存
+
+7. 关于 SecondaryNameNode 哪项是正确的？
+
+a)它是 NameNode 的热备
+b)它对内存没有要求
+c)它的目的是帮助 NameNode 合并编辑日志，减少 NameNode 启动时间
+d)SecondaryNameNode 应与 NameNode 部署到一个节点
+
+多选题：
+
+8. 下列哪项可以作为集群的管理工具
+
+a)Puppet
+b)Pdsh
+c)Cloudera Manager
+d)d)Zookeeper
+
+9. 配置机架感知的下面哪项正确
+
+a)如果一个机架出问题，不会影响数据读写
+b)写入数据的时候会写到不同机架的 DataNode 中
+c)MapReduce 会根据机架获取离自己比较近的网络数据
+
+10. Client 端上传文件的时候下列哪项正确
+
+a)数据经过 NameNode 传递给 DataNode
+b)Client 端将文件切分为 Block，依次上传
+c)Client 只上传数据到一台 DataNode，然后由 NameNode 负责 Block 复制工作
+
+11. 下列哪个是 Hadoop 运行的模式
+
+a)单机版
+b)伪分布式
+c)分布式
+
+12. Cloudera 提供哪几种安装 CDH 的方法
+
+a)Cloudera manager
+b)Tar ball
+c)Yum d)Rpm
+
+判断题：
+
+13. Ganglia 不仅可以进行监控，也可以进行告警。（ ）
+
+14. Block Size 是不可以修改的。（ ）
+
+15. Nagios 不可以监控 Hadoop 集群，因为它不提供 Hadoop 支持。（ ）
+
+16. 如果 NameNode 意外终止，SecondaryNameNode 会接替它使集群继续工作。（ ）
+
+17. Cloudera CDH 是需要付费使用的。（ ）
+
+18. Hadoop 是 Java 开发的，所以 MapReduce 只支持 Java 语言编写。（ ）
+
+19. Hadoop 支持数据的随机读写。（ ）
+
+20. NameNode 负责管理 metadata，client 端每次读写请求，它都会从磁盘中读取或则会写入 metadata 信息并反馈 client 端。（ ）
+
+21. NameNode 本地磁盘保存了 Block 的位置信息。（ ）
+
+22. DataNode 通过长连接与 NameNode 保持通信。（ ）
+
+23. Hadoop 自身具有严格的权限管理和安全措施保障集群正常运行。（ ）
+
+24. Slave 节点要存储数据，所以它的磁盘越大越好。（ ）
+
+25. hadoop dfsadmin –report 命令用于检测 HDFS 损坏块。（ ）
+
+26. Hadoop 默认调度器策略为 FIFO（ ）
+
+27. 集群内每个节点都应该配 RAID，这样避免单磁盘损坏，影响整个节点运行。（ ）
+
+28. 因为 HDFS 有多个副本，所以 NameNode 是不存在单点问题的。（ ）
+
+29. 每个 map 槽就是一个线程。（ ）
+
+30. Mapreduce 的 input split 就是一个 block。（ ）
+
+31. NameNode 的 Web UI 端口是 50030，它通过 jetty 启动的 Web 服务。（ ）
+
+32. Hadoop 环境变量中的 HADOOP_HEAPSIZE 用于设置所有 Hadoop 守护线程的内存。它默认是 200 GB。（ ）
+
+33. DataNode 首次加入 cluster 的时候，如果 log 中报告不兼容文件版本，那需要 NameNode执行“Hadoop namenode -format”操作格式化磁盘。（ ）
+
+别走开，答案在后面哦！
+
+大数据
+
+1. 下面哪个程序负责 HDFS 数据存储。答案C datanode
+
+a)NameNode
+b)Jobtracker
+c)Datanode 
+d)secondaryNameNode
+e)tasktracker
+
+2. HDfS 中的 block 默认保存几份？ 答案A默认3分
+
+a)3 份
+b)2 份
+c)1 份
+d)不确定
+
+3. 下列哪个程序通常与 NameNode 在一个节点启动？答案D
+
+a)SecondaryNameNode
+b)DataNode
+c)TaskTracker
+d)Jobtracker
+
+此题分析：
+
+hadoop的集群是基于master/slave模式，namenode和jobtracker属于master，datanode和tasktracker属于slave，master只有一个，而slave有多个SecondaryNameNode内存需求和NameNode在一个数量级上，所以通常secondary NameNode（运行在单独的物理机器上）和NameNode运行在不同的机器上。
+
+JobTracker和TaskTracker
+
+JobTracker 对应于 NameNode
+
+TaskTracker 对应于 DataNode
+
+DataNode 和NameNode 是针对数据存放来而言的
+
+JobTracker和TaskTracker是对于MapReduce执行而言的
+
+mapreduce中几个主要概念，mapreduce整体上可以分为这么几条执行线索：obclient，JobTracker与TaskTracker。
+
+1、JobClient会在用户端通过JobClient类将应用已经配置参数打包成jar文件存储到hdfs，并把路径提交到Jobtracker,然后由JobTracker创建每一个Task（即MapTask和ReduceTask）并将它们分发到各个TaskTracker服务中去执行。
+
+2、JobTracker是一个master服务，软件启动之后JobTracker接收Job，负责调度Job的每一个子任务task运行于TaskTracker上，并监控它们，如果发现有失败的task就重新运行它。一般情况应该把JobTracker部署在单独的机器上。
+
+3、TaskTracker是运行在多个节点上的slaver服务。TaskTracker主动与JobTracker通信，接收作业，并负责直接执行每一个任务。TaskTracker都需要运行在HDFS的DataNode上。
+
+4. Hadoop 作者 答案C Doug cutting
+
+a)Martin Fowler
+b)Kent Beck
+c)Doug cutting
+
+5. HDFS 默认 Block Size 答案：B
+
+a)32MB
+b)64MB 
+c)128MB
+
+(因为版本更换较快，这里答案只供参考)
+
+6. 下列哪项通常是集群的最主要瓶颈：答案：C磁盘
+
+a)CPU
+b)网络
+c)磁盘IO 
+d)内存
+
+该题解析：
+
+首先集群的目的是为了节省成本，用廉价的pc机，取代小型机及大型机。小型机和大型机有什么特点？
+
+1.cpu处理能力强
+
+2.内存够大
+
+所以集群的瓶颈不可能是a和d
+
+3.网络是一种稀缺资源，但是并不是瓶颈。
+
+4.由于大数据面临海量数据，读写数据都需要io，然后还要冗余数据，hadoop一般备3份数据，所以IO就会打折扣。
+
+7. 关于 SecondaryNameNode 哪项是正确的？答案C
+
+a)它是 NameNode 的热备
+b)它对内存没有要求
+c)它的目的是帮助 NameNode 合并编辑日志，减少 NameNode 启动时间
+d)SecondaryNameNode 应与 NameNode 部署到一个节点。
+
+多选题：
+
+8. 下列哪项可以作为集群的管理？答案：ABD
+
+a)Puppet 
+b)Pdsh 
+c)Cloudera Manager
+d)Zookeeper
+
+9. 配置机架感知的下面哪项正确：答案ABC
+
+a)如果一个机架出问题，不会影响数据读写
+b)写入数据的时候会写到不同机架的 DataNode 中
+c)MapReduce 会根据机架获取离自己比较近的网络数据
+10. Client 端上传文件的时候下列哪项正确？答案B
+
+a)数据经过 NameNode 传递给 DataNode
+
+b)Client 端将文件切分为 Block，依次上传
+
+c)Client 只上传数据到一台 DataNode，然后由 NameNode 负责 Block 复制工作
+
+该题分析：
+Client向NameNode发起文件写入的请求。
+
+NameNode根据文件大小和文件块配置情况，返回给Client它所管理部分DataNode的信息。
+
+Client将文件划分为多个Block，根据DataNode的地址信息，按顺序写入到每一个DataNode块中。
+
+11. 下列哪个是 Hadoop 运行的模式：答案ABC
+
+a)单机版 
+b)伪分布式 
+c)分布式
+
+12. Cloudera 提供哪几种安装 CDH 的方法？答案：ABCD
+
+a)Cloudera manager 
+b)Tarball 
+c)Yum 
+d)Rpm
+
+判断题：
+
+13. Ganglia 不仅可以进行监控，也可以进行告警。（ 正确）
+
+分析：此题的目的是考Ganglia的了解。严格意义上来讲是正确。ganglia作为一款最常用的Linux环境中的监控软件，它擅长的的是从节点中按照用户的需求以较低的代价采集数据。但是ganglia在预警以及发生事件后通知用户上并不擅长。最新的ganglia已经有了部分这方面的功能。但是更擅长做警告的还有Nagios。Nagios，就是一款精于预警、通知的软件。通过将Ganglia和Nagios组合起来，把Ganglia采集的数据作为Nagios的数据源，然后利用Nagios来发送预警通知，可以完美的实现一整套监控管理的系统。
+
+14. Block Size 是不可以修改的。（错误 ）
+
+分析：它是可以被修改的Hadoop的基础配置文件是hadoop-default.xml，默认建立一个Job的时候会建立Job的Config，Config首先读入hadoop-default.xml的配置，然后再读入hadoop-site.xml的配置（这个文件初始的时候配置为空），hadoop-site.xml中主要配置需要覆盖的hadoop-default.xml的系统级配置。
+
+15. Nagios 不可以监控 Hadoop 集群，因为它不提供 Hadoop 支持。（错误 ）
+
+分析：Nagios是集群监控工具，而且是云计算三大利器之一
+
+16. 如果 NameNode 意外终止，SecondaryNameNode 会接替它使集群继续工作。（错误 ）
+
+分析：SecondaryNameNode是帮助恢复，而不是替代，如何恢复，可以查看
+
+17. Cloudera CDH 是需要付费使用的。（错误 ）
+
+分析：第一套付费产品是Cloudera Enterpris，Cloudera Enterprise在美国加州举行的 Hadoop 大会 (Hadoop Summit) 上公开，以若干私有管理、监控、运作工具加强 Hadoop 的功能。收费采取合约订购方式，价格随用的 Hadoop 叢集大小变动。
+
+18. Hadoop 是 Java 开发的，所以 MapReduce 只支持 Java 语言编写。（错误 ）
+
+分析：rhadoop是用R语言开发的，MapReduce是一个框架，可以理解是一种思想，可以使用其他语言开发。
+
+19. Hadoop 支持数据的随机读写。（错 ）
+
+分析：lucene是支持随机读写的，而hdfs只支持随机读。但是HBase可以来补救。HBase提供随机读写，来解决Hadoop不能处理的问题。HBase自底层设计开始即聚焦于各种可伸缩性问题：表可以很“高”，有数十亿个数据行；也可以很“宽”，有数百万个列；水平分区并在上千个普通商用机节点上自动复制。表的模式是物理存储的直接反映，使系统有可能提高高效的数据结构的序列化、存储和检索。
+
+20. NameNode 负责管理 metadata，client 端每次读写请求，它都会从磁盘中读取或则会写入 metadata 信息并反馈 client 端。（错误）
+
+此题分析：
+
+NameNode 不需要从磁盘读取 metadata，所有数据都在内存中，硬盘上的只是序列化的结果，只有每次 namenode 启动的时候才会读取。
+1）文件写入
+Client向NameNode发起文件写入的请求。
+NameNode根据文件大小和文件块配置情况，返回给Client它所管理部分DataNode的信息。
+Client将文件划分为多个Block，根据DataNode的地址信息，按顺序写入到每一个DataNode块中。
+
+2）文件读取
+Client向NameNode发起文件读取的请求。
+
+21. NameNode 本地磁盘保存了 Block 的位置信息。（ 个人认为正确，欢迎提出其它意见）
+
+分析：DataNode是文件存储的基本单元，它将Block存储在本地文件系统中，保存了Block的Meta-data，同时周期性地将所有存在的Block信息发送给NameNode。NameNode返回文件存储的DataNode的信息。
+Client读取文件信息。
+
+22. DataNode 通过长连接与 NameNode 保持通信。（ ）
+
+这个有分歧：具体正在找这方面的有利资料。下面提供资料可参考。
+
+首先明确一下概念：
+
+（1）.长连接
+Client方与Server方先建立通讯连接，连接建立后不断开，然后再进行报文发送和接收。这种方式下由于通讯连接一直存在，此种方式常用于点对点通讯。
+
+（2）.短连接
+Client方与Server每进行一次报文收发交易时才进行通讯连接，交易完毕后立即断开连接。此种方式常用于一点对多点通讯，比如多个Client连接一个Server.
+
+23. Hadoop 自身具有严格的权限管理和安全措施保障集群正常运行。（错误 ）
+
+hadoop只能阻止好人犯错，但是不能阻止坏人干坏事
+
+24. Slave 节点要存储数据，所以它的磁盘越大越好。（ 错误）
+
+分析：一旦Slave节点宕机，数据恢复是一个难题
+
+25. hadoop dfsadmin –report 命令用于检测 HDFS 损坏块。（错误 ）
+
+26. Hadoop 默认调度器策略为 FIFO（正确 ）
+
+27. 集群内每个节点都应该配 RAID，这样避免单磁盘损坏，影响整个节点运行。（错误 ）
+
+分析：首先明白什么是RAID，可以参考百科磁盘阵列。这句话错误的地方在于太绝对，具体情况具体分析。题目不是重点，知识才是最重要的。因为hadoop本身就具有冗余能力，所以如果不是很严格不需要都配备RAID。具体参考第二题。
+
+28. 因为 HDFS 有多个副本，所以 NameNode 是不存在单点问题的。（错误 ）
+
+29. 每个 map 槽就是一个线程。（错误 ）
+
+分析：首先我们知道什么是map 槽,map 槽->map slotmap slot 只是一个逻辑值 ( org.apache.hadoop.mapred.TaskTracker.TaskLauncher.numFreeSlots )，而不是对应着一个线程或者进程
+
+30. Mapreduce 的 input split 就是一个 block。（错误 ）
+
+31. NameNode 的 Web UI 端口是 50030，它通过 jetty 启动的 Web 服务。（错误 ）
+
+32. Hadoop 环境变量中的 HADOOP_HEAPSIZE 用于设置所有 Hadoop 守护线程的内存。它默认是 200 GB。（ 错误）
+
+hadoop为各个守护进程（namenode,secondarynamenode,jobtracker,datanode,tasktracker）统一分配的内存在hadoop-env.sh中设置，参数为HADOOP_HEAPSIZE，默认为1000M。
+
+33、33. DataNode 首次加入 cluster 的时候，如果 log 中报告不兼容文件版本，那需要 NameNode执行“Hadoop namenode -format”操作格式化磁盘。（错误 ）
+
+分析：
+
+首先明白介绍，什么ClusterID
+
+ClusterID
+
+添加了一个新的标识符ClusterID用于标识集群中所有的节点。当格式化一个Namenode，需要提供这个标识符或者自动生成。这个ID可以被用来格式化加入集群的其他Namenode。
+
+二次整理
+
+有的同学问题的重点不是上面分析内容：内容如下：
+
+这个报错是说明 DataNode 所装的Hadoop版本和其它节点不一致，应该检查DataNode的Hadoop版本
+
+ 
+
+End.
