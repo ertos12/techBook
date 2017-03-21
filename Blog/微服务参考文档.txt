@@ -1,3 +1,6 @@
+SpringCloud实战教程
+https://eacdy.gitbooks.io/spring-cloud-book/content/
+
 Eureka
 云端中间层负载均衡工具 Eureka 
 http://blog.csdn.net/defonds/article/details/38067867
