@@ -1,3 +1,10 @@
+存储
+
+
+网络
+
+
+
 部署管理
 
 
@@ -5,6 +12,20 @@
 配置
 对容器中应用程序的配置和日志的认知
 http://dockone.io/article/637
+
+使用YAML创建一个 Kubernetes Depolyment
+https://www.kubernetes.org.cn/1414.html
+
+
+
+
+Kubernetes（k8s）有状态集群服务部署与管理
+https://www.kubernetes.org.cn/930.html
+ubernetes 有状态集群服务部署与管理
+http://dockone.io/article/2016
+
+脚本初始化
+把刷卡的工作抽出来单独作为应用，比如以job方式启动这个独立的刷库应用
 
 
 
@@ -19,6 +40,9 @@ http://dockone.io/article/637
 
 
 弹性伸缩
+StatefulSet: Kubernetes 中对有状态应用的运行和伸缩
+https://www.kubernetes.org.cn/1130.html
+
 
 
 升级
@@ -39,3 +63,10 @@ http://dockone.io/article/637
 无状态迁移/有状态迁移
 
 
+
+K8s
+使用kubernetes的deployment进行RollingUpdate
+http://www.jianshu.com/p/6bc8e0ae65d1
+
+Kubernetes在企业级架构中的实践分享
+https://www.kubernetes.org.cn/97.html
