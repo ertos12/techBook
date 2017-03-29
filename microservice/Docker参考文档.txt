@@ -2,11 +2,16 @@
 
 
 网络
-
+http://dockone.io/article/2072
 
 
 部署管理
-
+Kubernetes（k8s）有状态集群服务部署与管理
+https://www.kubernetes.org.cn/930.html
+ubernetes 有状态集群服务部署与管理
+http://dockone.io/article/2016
+轻松了解Kubernetes部署功能
+http://www.tuicool.com/articles/qyaIBz
 
 
 配置
@@ -17,12 +22,6 @@ http://dockone.io/article/637
 https://www.kubernetes.org.cn/1414.html
 
 
-
-
-Kubernetes（k8s）有状态集群服务部署与管理
-https://www.kubernetes.org.cn/930.html
-ubernetes 有状态集群服务部署与管理
-http://dockone.io/article/2016
 
 脚本初始化
 把刷卡的工作抽出来单独作为应用，比如以job方式启动这个独立的刷库应用
@@ -36,6 +35,8 @@ http://dockone.io/article/2016
 路由&负载均衡
 
 
+
+
 可靠性
 
 
@@ -44,15 +45,19 @@ StatefulSet: Kubernetes 中对有状态应用的运行和伸缩
 https://www.kubernetes.org.cn/1130.html
 
 
+https://kubernetes.io/docs/user-guide/petset/
+
 
 升级
 
 
 
 监控
-
-
-
+http://www.zoues.com/2016/02/27/dcosk8sliveness/
+Docker容器的自动化监控实现
+http://www.dockerinfo.net/4361.html
+容器监控种类大盘点
+http://dockone.io/article/2088
 日志
 
 
@@ -70,3 +75,6 @@ http://www.jianshu.com/p/6bc8e0ae65d1
 
 Kubernetes在企业级架构中的实践分享
 https://www.kubernetes.org.cn/97.html
+
+Kubernetes(k8s)在企业中的场景运用及管理实践
+http://www.dockerinfo.net/2719.html
