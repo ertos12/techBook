@@ -73,6 +73,13 @@ http://m.2cto.com/kf/201608/543525.html
 DevOps和可视运维如何搭配
 http://www.infoq.com/cn/articles/11devops
 
+
+聊聊无状态服务
+http://www.tuicool.com/articles/reeMBbf
+
+微服务与SOA架构
+http://dockone.io/article/1646
+
 微服务架构优缺点
 http://www.cnblogs.com/zgynhqf/p/5679028.html
 

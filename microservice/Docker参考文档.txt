@@ -21,7 +21,8 @@ http://dockone.io/article/637
 使用YAML创建一个 Kubernetes Depolyment
 https://www.kubernetes.org.cn/1414.html
 
-
+如何设置Docker容器中Java应用的内存限制
+https://yq.aliyun.com/articles/18037
 
 脚本初始化
 把刷卡的工作抽出来单独作为应用，比如以job方式启动这个独立的刷库应用
@@ -58,9 +59,11 @@ Docker容器的自动化监控实现
 http://www.dockerinfo.net/4361.html
 容器监控种类大盘点
 http://dockone.io/article/2088
+
+
 日志
-
-
+关于K8s集群器日志收集的总结
+https://www.kubernetes.org.cn/1013.html
 
 容器迁移
 
@@ -78,3 +81,8 @@ https://www.kubernetes.org.cn/97.html
 
 Kubernetes(k8s)在企业中的场景运用及管理实践
 http://www.dockerinfo.net/2719.html
+
+
+Docker学习路线图 (持续更新中)
+https://yq.aliyun.com/articles/40494?spm=5176.100239.0.0.lAw4DD
+
