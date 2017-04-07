@@ -87,3 +87,5 @@ http://www.dockerinfo.net/2719.html
 Docker学习路线图 (持续更新中)
 https://yq.aliyun.com/articles/40494?spm=5176.100239.0.0.lAw4DD
 
+kubernete中文文档
+https://www.kubernetes.org.cn/doc-4
