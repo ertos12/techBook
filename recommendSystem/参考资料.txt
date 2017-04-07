@@ -2,3 +2,10 @@
 http://tech.meituan.com/travel-recsys.html
 http://tech.meituan.com/mt-recommend-practice.html
 http://tech.meituan.com/mt_waimai_order_evolution.html
+
+从算法到案例：推荐系统必读的10篇精选技术文章
+http://www.infoq.com/cn/news/2015/12/Algorithm-case-10
+
+多模型融合推荐算法——从原理到实践
+
+http://www.infoq.com/cn/articles/multi-model-fusion-recommendation-algorithm
