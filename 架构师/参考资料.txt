@@ -1,0 +1,6 @@
+一些架构设计原则
+http://www.rowkey.me/blog/2017/01/15/arch-spec/
+
+谈谈互联网后端基础设施
+http://www.rowkey.me/blog/2016/08/27/server-basic-tech-stack/
+
