@@ -9,3 +9,12 @@ http://www.infoq.com/cn/news/2015/12/Algorithm-case-10
 多模型融合推荐算法——从原理到实践
 
 http://www.infoq.com/cn/articles/multi-model-fusion-recommendation-algorithm
+
+百分点推荐引擎——从需求到架构
+http://www.infoq.com/cn/articles/baifendian-recommendation-engine
+
+数据杂谈
+http://www.rowkey.me/blog/2016/02/23/data-talk/
+
+
+
