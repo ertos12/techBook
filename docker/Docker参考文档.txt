@@ -7,6 +7,8 @@ http://dockone.io/article/2072
 Ubuntu16.04手动部署Kubernetes(2)——Flannel网络部署
 http://time-track.cn/deploy-kubernetes-step-by-step-on-trusty-section-2.html
 
+Kubernetes集群中的网络
+https://www.kubernetes.org.cn/1712.html
 
 部署管理
 Kubernetes（k8s）有状态集群服务部署与管理
