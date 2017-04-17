@@ -103,6 +103,8 @@ https://github.com/spring-cloud/spring-cloud-netflix/issues/1776
 Override ribbon NIWSServerListFilterClassName issue:
 https://github.com/spring-cloud/spring-cloud-netflix/issues/169
 
+微服务demo
+http://blog.didispace.com/springcloud1/
 
 Chris Richardson 微服务系列
 http://blog.daocloud.io/microserviceooktion
