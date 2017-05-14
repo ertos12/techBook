@@ -1,0 +1,34 @@
+oozie 安装过程详解  https://yq.aliyun.com/articles/60209
+Oozie-3.3.2安装配置运行实践 http://shiyanjun.cn/archives/644.html
+
+Oozie开发指导：http://blog.cloudera.com/blog/category/oozie/
+OOzie中文实例介绍：http://www.infoq.com/cn/articles/oozieexample
+
+
+工作流引擎Oozie（一）：workflow
+http://www.cnblogs.com/en-heng/p/5531583.html
+
+工作流引擎Oozie（二）：coordinator
+http://www.cnblogs.com/en-heng/p/5581331.html
+
+oozie系列
+http://www.cnblogs.com/xing901022/category/885858.html
+
+github:
+follow:
+oozie系列：
+https://gist.github.com/airawat/6015793
+subworkflow
+https://gist.github.com/airawat/6012021
+00-OozieBundleApplication
+https://gist.github.com/airawat/6010341
+
+
+00-OozieCoordinatorJobWithDatasetCreationAsTrigger
+https://gist.github.com/airawat/5970026
+
+00-OozieCoordinatorJobWithTimeAsTrigger
+https://gist.github.com/airawat/5954657
+airawat 
+
+http://stackoverflow.com/questions/28352814/generating-oozie-workflows-using-java-code

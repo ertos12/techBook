@@ -1,6 +1,10 @@
-Spark性能优化之道——解决Spark数据倾斜（Data Skew）的N种姿势
-http://www.jasongj.com/tags/Design-Pattern/
+Windows下搭建Spark+Hadoop开发环境                             http://apache.fayea.com/hadoop/common/hadoop-2.7.1/
+Spark性能优化之道——解决Spark数据倾斜（Data Skew）的N种姿势  http://www.jasongj.com/tags/Design-Pattern/
 http://www.jasongj.com/tags/Spark/
 
+
+
 http://www.it-ebooks.info/
-http://www.allitebooks.com/
+http://www.allitebooks.cokew/
+
+pipeline
