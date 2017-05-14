@@ -32,3 +32,4 @@ https://gist.github.com/airawat/5954657
 airawat 
 
 http://stackoverflow.com/questions/28352814/generating-oozie-workflows-using-java-code
+https://github.com/klout/scoozie/tree/master/src/main/scala
