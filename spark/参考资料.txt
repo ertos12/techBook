@@ -7,4 +7,10 @@ http://www.jasongj.com/tags/Spark/
 http://www.it-ebooks.info/
 http://www.allitebooks.cokew/
 
-pipeline
+
+ Spark算子系列文章
+http://blog.csdn.net/ljp812184246/article/details/53895299
+
+
+ 使用spark ml pipeline进行机器学习 
+http://blog.csdn.net/zbc1090549839/article/details/50935274
