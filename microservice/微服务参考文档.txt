@@ -132,5 +132,7 @@ http://dockone.io/article/1066
 微服务实践（七）：从单体式架构迁移到微服务架构
 http://dockone.io/article/1266
 
+12要素应用理论
+https://12factor.net/zh_cn/
 分库分表：
 开源中间件：mycat
