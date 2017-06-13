@@ -29,7 +29,8 @@ http://www.idouba.net/sping-cloud-and-netflix/
 http://blog.csdn.net/defonds/article/details/32729155
 
 Netflix发布云中间层服务开源项目Ribbon
-http://www.infoq.com/cn/news/2013/01/netflix-annouced-ribbon/
+http://www.infoq.com/cn/news/2013/01/netflix-annouced-ribbon/五大
+
 
 
 
