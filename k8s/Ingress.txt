@@ -31,3 +31,11 @@ http://www.jianshu.com/p/c67c6283fe27
 
 Kubernetes Traefik Ingress安装试用
 http://rootsongjc.github.io/blogs/traefik-ingress-installation/
+如果你需要在kubernetes集群以外访问就需要设置DNS，或者修改本机的hosts文件。
+curl -H Host:traefik.nginx.io http://172.20.0.115/
+****Traefik会解析http请求header里的Host参数将流量转发给Ingress配置里的相应service。 ******
+
+
+Kubernetes Ingress解析
+http://rootsongjc.github.io/blogs/kubernetes-ingress-resource/
+
