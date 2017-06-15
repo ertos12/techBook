@@ -1,0 +1,33 @@
+Kubernetes Ingress（1）简介
+http://shareinto.github.io/2017/04/13/KubernetesIngress%EF%BC%881%EF%BC%89/
+
+Kubernetes Ingress（2）Controller源码分析
+http://shareinto.github.io/2017/04/13/KubernetesIngress%EF%BC%882%EF%BC%89/
+
+
+如何在Kubernetes（k8s）中暴露服务访问  ****
+https://www.kubernetes.org.cn/401.html
+
+
+基于Ingress的BlueGreenDeployment  --蓝绿部署
+http://shareinto.github.io/2017/04/24/%E5%9F%BA%E4%BA%8Ekubernetes%E7%9A%84canary-deployment/
+
+Kubernetes网络原理及方案  ****
+service/ingress
+https://www.kubernetes.org.cn/2059.html
+
+
+Kubernetes nginx-ingress-controller
+https://daemonza.github.io/2017/02/13/kubernetes-nginx-ingress-controller/
+
+
+Kubernetes 搭建ingress
+http://jeromeliu.win/2017/04/24/Kubernetes-%E6%90%AD%E5%BB%BAingress/
+
+
+Kubernetes Ingress概念及部署  ****
+http://www.jianshu.com/p/c67c6283fe27
+
+
+Kubernetes Traefik Ingress安装试用
+http://rootsongjc.github.io/blogs/traefik-ingress-installation/
