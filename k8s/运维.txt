@@ -1,6 +1,37 @@
+---日志---
+使用Logstash收集Kubernetes的应用日志
+http://rootsongjc.github.io/blogs/kubernetes-logstash/
+
+使用Filebeat收集Kubernetes中的应用日志
+http://rootsongjc.github.io/blogs/kubernetes-filebeat/
+
+
+
+---监控告警---
 Kubernetes 搭建grafana+heapster+influxdb监控服务
 http://jeromeliu.win/2017/04/24/Kubernetes-%E6%90%AD%E5%BB%BAgrafana-heapster-influxdb%E7%9B%91%E6%8E%A7%E6%9C%8D%E5%8A%A1/
+
+http://time-track.cn/kubernetes-resource-usage-monitor-practice.html
 
 
 Prometheus介绍
 http://www.jianshu.com/p/0a4acb61ce35/0a4acb61ce35
+
+
+恢复
+
+
+伸缩
+
+http://rootsongjc.github.io/blogs/kubernetes-concept-deployment/
+
+Deployment扩容
+kubectl scale deployment nginx-deployment --replicas 10
+
+kubectl autoscale deployment nginx-deployment --min=10 --max=15 --cpu-percent=80
+
+
+
+升级
+Kubernetes集群中Service的滚动更新
+http://tonybai.com/2017/02/09/rolling-update-for-services-in-kubernetes-cluster/

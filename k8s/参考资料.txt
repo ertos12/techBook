@@ -6,17 +6,7 @@ http://www.fangyunlin.com/?p=51
 http://time-track.cn/deploy-kubernetes-in-ubuntu-14-04.html
 http://int32bit.me/2016/04/22/ubuntu%E5%AE%89%E8%A3%85kubernetes%E9%9B%86%E7%BE%A4/
 
-存储
 
+最佳实践
+http://rootsongjc.github.io/blogs/configuration-best-practice/
 
-网络
-
-
-日志
-
-
-监控
-http://time-track.cn/kubernetes-resource-usage-monitor-practice.html
-
-
-安全

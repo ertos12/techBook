@@ -1,3 +1,7 @@
+Kubernetes 搭建ingress
+http://jeromeliu.win/2017/04/24/Kubernetes-%E6%90%AD%E5%BB%BAingress/
+
+
 Kubernetes Ingress（1）简介
 http://shareinto.github.io/2017/04/13/KubernetesIngress%EF%BC%881%EF%BC%89/
 
@@ -21,9 +25,6 @@ Kubernetes nginx-ingress-controller
 https://daemonza.github.io/2017/02/13/kubernetes-nginx-ingress-controller/
 
 
-Kubernetes 搭建ingress
-http://jeromeliu.win/2017/04/24/Kubernetes-%E6%90%AD%E5%BB%BAingress/
-
 
 Kubernetes Ingress概念及部署  ****
 http://www.jianshu.com/p/c67c6283fe27
@@ -38,4 +39,16 @@ curl -H Host:traefik.nginx.io http://172.20.0.115/
 
 Kubernetes Ingress解析
 http://rootsongjc.github.io/blogs/kubernetes-ingress-resource/
+
+为Kubernetes集群中服务部署Nginx入口服务
+http://tonybai.com/2016/11/22/deploy-nginx-service-for-the-services-in-kubernetes-cluster/
+
+----kube-proxy---
+kubernetes中port、target port、node port的对比分析，以及kube-proxy代理
+http://blog.csdn.net/xinghun_4/article/details/50492041
+
+---iptables---
+ Iptables详解
+http://blog.csdn.net/reyleon/article/details/12976341
+
 
