@@ -1,3 +1,7 @@
+Kubernetes架构及资源关系简单总结
+http://time-track.cn/Kubernetes-resources-summaries.html
+
+
 部署
 https://robinle.github.io/k8s/2016/12/29/Kubernetes%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%83%A8%E7%BD%B2/
 
