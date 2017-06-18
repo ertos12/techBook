@@ -11,6 +11,7 @@ http://rootsongjc.github.io/blogs/kubernetes-filebeat/
 Kubernetes 搭建grafana+heapster+influxdb监控服务
 http://jeromeliu.win/2017/04/24/Kubernetes-%E6%90%AD%E5%BB%BAgrafana-heapster-influxdb%E7%9B%91%E6%8E%A7%E6%9C%8D%E5%8A%A1/
 
+Kubernetes资源使用监控实践
 http://time-track.cn/kubernetes-resource-usage-monitor-practice.html
 
 

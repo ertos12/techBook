@@ -3,3 +3,10 @@ https://www.kubernetes.org.cn/2059.html
 
 理解Docker单机容器网络
 http://tonybai.com/2016/01/15/understanding-container-networking-on-single-host/
+
+理解Docker跨多主机容器网络
+http://tonybai.com/2016/02/15/understanding-docker-multi-host-networking/
+
+
+Kubernetes的网络模型
+http://blog.csdn.net/zjysource/article/details/52052420
