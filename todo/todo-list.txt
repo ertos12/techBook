@@ -1,0 +1,31 @@
+1.JAVA基础
+  -面向对象基础
+  -字符串
+  -常用工具Date
+  -容器(MAP，SET，TREE，Array)
+  -文件IO
+  -网络IO
+  -进程/多线程
+  -并发
+
+2.并发编程
+
+3.BIGDATA
+  1、kafka
+  2、zookeeper/etcd/eureka
+  3、flume
+  4、hbase
+  5、spark
+  6、hive
+  7、scala
+  8、mysql
+  9、redis
+  10、oracle
+
+4. Go language
+   K8s
+   Docker
+
+5. 推荐系统
+   算法
+   数据挖掘
