@@ -47,9 +47,6 @@ https://yq.aliyun.com/articles/18037
 
 
 服务发现
-如何在Kubernetes（k8s）中暴露服务访问
-https://www.kubernetes.org.cn/401.html
-
 路由&负载均衡
 
 基于Docker的负载均衡和服务发现

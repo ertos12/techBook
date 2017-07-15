@@ -1,6 +1,8 @@
 Kubernetes ´î½¨ingress
 http://jeromeliu.win/2017/04/24/Kubernetes-%E6%90%AD%E5%BB%BAingress/
 
+Kubernetes Ingress½âÎö
+https://www.kubernetes.org.cn/1885.html
 
 Kubernetes Ingress£¨1£©¼ò½é
 http://shareinto.github.io/2017/04/13/KubernetesIngress%EF%BC%881%EF%BC%89/

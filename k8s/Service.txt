@@ -1,0 +1,6 @@
+Kubernetes(k8s)如何使用kube-dns实现服务发现
+https://www.kubernetes.org.cn/273.html
+
+Kubernetes（K8S）的服务发现和kube-dns插件
+https://www.kubernetes.org.cn/542.html
+
