@@ -1,0 +1,8 @@
+一分钟了解负载均衡的一切
+http://www.jianshu.com/p/c388d52b3454
+
+LB 负载均衡的层次结构
+http://www.jianshu.com/p/03ee39b5f248
+
+Nginx学习（一）：负载均衡常见手段
+http://www.jianshu.com/p/0199762cf258
