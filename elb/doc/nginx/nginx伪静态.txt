@@ -1,0 +1,15 @@
+nginx伪静态规则
+　　要将http://dede.com/index.php?t=3用伪静态规则改写成http://dede.com/t3.html，即可在nginx的conf/nginx.conf里面添加即可。
+
+      在location / {}里添加，如：
+
+        location / {
+            root   D:/phpweb/wwwroot;
+            index  index.php index.html index.htm;
+            rewrite ^(.*)/t(\d+)\.html$ $1/index.php?t=$2 last;
+        }
+
+　　仔细观察 rewrite ^(.*)/t(\d+)\.html$ $1/index.php?t=3 last;其实感觉nginx的伪静态规则蛮好写的。就是用正则的基础上，一个rewrite来声明，然后^是伪静态规则开头，(.*)匹配任意字符，这里匹配的就是域名了，t就是你在这里想加的字符，如你可以加apple、orange这样的分类名了，(\d+)匹配的是数字，\.html匹配的是后缀，$就是正则匹配的结束。后面半部分就是要改写的url了，用$1打头，表示域名，/index.php?t=3就是要改写的URL，用last;结束即可。
+
+
+注：客户在访问服务器时，浏览器中显示的地址信息是静态的地址信息（http://dede.com/t3.html），经过nginx的rewrite中的正则表达式（  ^(.*)/t(\d+)\.html$  ）匹配到合适的地址后，指定到后面的访问路径（$1/index.php?t=3 last）这才是真正的服务器数据的访问地址，然后向服务器发起请求。
