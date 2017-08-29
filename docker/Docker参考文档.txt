@@ -109,3 +109,10 @@ kubernete中文文档
 https://www.kubernetes.org.cn/doc-4
 
 
+高阶：
+ OCI标准和runC原理解读
+http://dockone.io/article/776
+
+容器迁移
+http://www.infoq.com/cn/articles/container-live-migration
+

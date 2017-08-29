@@ -18,7 +18,8 @@ http://time-track.cn/kubernetes-resource-usage-monitor-practice.html
 Prometheus介绍
 http://www.jianshu.com/p/0a4acb61ce35/0a4acb61ce35
 
-
+Kubernetes主机和容器的监控方案
+http://dockone.io/article/2602
 恢复
 
 
